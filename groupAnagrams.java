@@ -21,18 +21,21 @@ public class Solution {
 
 
     }
+
+    //counting sort. a
     // returns a sorted verstion of a str    
     public String countingSort(String str) {
     	if(str == null || str.length() == 0) {
     		return "";
     	}
     	char[] output = new char[str.length()];
-    	int[] count = new int[26];
-
+    	int[] count = new int[26]; // 26 chars
+    	// fill up count array
     	for(int i = 0; i < str.length(); i++) {
     		count[str.charAt(i) - 'a'] += 1;
     	}
 
+    	//add up positions in count.
     	int preTotal = 0;
     	for(int i = 0; i < count.length; i++) {
     		count[i] += preTotal;
