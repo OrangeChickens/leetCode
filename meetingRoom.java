@@ -2,9 +2,9 @@
 
 For example,
 Given [6, 30],[5, 10],[15, 20]],
-return 2
+return 2 
 */
-public class Solution {
+public class Solution { // O(Arrays.sort)
 	public int minMeetingRooms(Interval[] intervals) {
 		int length = intervals.length;
 		if(length == 0) {
@@ -35,7 +35,7 @@ public class Solution {
 	}
 }
 
-//Solution 2 Greedy. 
+//Solution 2 Greedy. O(n^2)
 //5 10, 6 30 , 15 20
 public class Solution {
 	public int minMeetingRooms(Interval[] intervals) {

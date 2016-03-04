@@ -1,7 +1,7 @@
 // iterative solution
   /*
   public ListNode reverseList(ListNode head) {
-        if(head==null||head.next==null) return head;
+        if(head == null||head.next == null) return head;
         ListNode pre = null,cur = null;
         while(head!=null){
             cur = head.next;
@@ -17,7 +17,7 @@
     public ListNode reverseList(ListNode head) {
        
         // first break every node, then link them back wards. last is the last node. 
-        if(head == null || head.next ==null) {
+        if(head == null || head.next == null) {
             return head;
         } 
             ListNode temp = head.next;
@@ -28,3 +28,4 @@
 
      }
 }
+
